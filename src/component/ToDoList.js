@@ -1,5 +1,5 @@
 import React from 'react'
-import { Table } from 'react-bootstrap';
+import { Table, Button } from 'react-bootstrap';
 export const ToDoList = ({inputTaskList}) => {
     return (
         <div>
@@ -16,8 +16,9 @@ export const ToDoList = ({inputTaskList}) => {
       {inputTaskList.map((item,i)=>{
     
     return(<tr key={i}>
-            <td>{item?.task}</td>
+            <td>{item?.title}</td>
             <td>{item?.hr}</td>
+            <td><Button>Remove task</Button></td>
             </tr> ) 
       })}
     

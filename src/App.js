@@ -12,7 +12,7 @@ function App() {
      
     const handleTasklist=formData=>{
       console.log("formData>>>",formData)
-      setInputTaskList(...inputTaskList, formData)
+      setInputTaskList([...inputTaskList, formData])
     }
 
       console.log("inputTaskList>>>",inputTaskList)
